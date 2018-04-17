@@ -1,0 +1,58 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Exponent by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+	@mixin line-icon($size: 1px) {
+		&:before {
+			color: _palette(accent1, bg) !important;
+		}
+	}
+
+/* Icon */
+
+	.icon {
+		&.alt {
+			@include line-icon;
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		&:after {
+			display: none;
+		}
+
+		.inner {
+			opacity: 1 !important;
+		}
+	}
+
+/* Header */
+
+	#header {
+		h1 {
+			a {
+				@include line-icon;
+			}
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.icon {
+			&.alt {
+				&:before {
+					color: _palette(accent1, bg) !important;
+				}
+			}
+		}
+	}

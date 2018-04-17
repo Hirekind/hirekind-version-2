@@ -1,0 +1,33 @@
+/*
+	Exponent by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+*/
+
+/* Icon */
+
+	.icon.alt:before {
+		color: #7ed5b1 !important;
+	}
+
+/* Banner */
+
+	#banner:after {
+		display: none;
+	}
+
+	#banner .inner {
+		opacity: 1 !important;
+	}
+
+/* Header */
+
+	#header h1 a:before {
+		color: #7ed5b1 !important;
+	}
+
+/* Footer */
+
+	#footer .icon.alt:before {
+		color: #7ed5b1 !important;
+	}
