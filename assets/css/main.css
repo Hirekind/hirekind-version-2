@@ -2573,10 +2573,16 @@
 				}
 
 				#header h1 a:before {
+					color: #7ed5b1;					
+					margin-right: 0.6em;
+				}
+				
+				/*background: url("../../images/Hirekind-logo-horizontal-color.png") no-repeat; 
+				#header h1 a:before {
 					color: #7ed5b1;
 					content: '\f0c2';
 					margin-right: 0.6em;
-				}
+				}*/			
 
 		#header nav {
 			position: absolute;
@@ -2626,11 +2632,378 @@
 						margin-left: 0.75em;
 					}
 
+/* Separate Banner */
+	#banner-talent {
+		background-attachment: fixed,							fixed;
+		background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg");
+		background-position: top left,						center center;
+		background-repeat: repeat,							no-repeat;
+		background-size: auto,							cover;
+		color: #d8dadb;
+		height: calc(100vh - 3.5em);
+		min-height: 35em;
+		position: relative;
+		text-align: center;
+	}
+
+		#banner-talent h2, #banner-talent h3, #banner-talent h4, #banner-talent h5, #banner-talent h6, #banner-talent strong, #banner-talent b {
+			color: #ffffff;
+		}
+
+		#banner-talent a {
+			color: #ffffff;
+		}
+
+		#banner-talent input[type="submit"],
+		#banner-talent input[type="reset"],
+		#banner-talent input[type="button"],
+		#banner-talent .button {
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
+		}
+
+			#banner-talent input[type="submit"]:hover,
+			#banner-talent input[type="reset"]:hover,
+			#banner-talent input[type="button"]:hover,
+			#banner-talent .button:hover {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			#banner-talent input[type="submit"]:active,
+			#banner-talent input[type="reset"]:active,
+			#banner-talent input[type="button"]:active,
+			#banner-talent .button:active {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+		#banner-talent ul.labeled-icons li .icon {
+			border-color: #ffffff;
+		}
+
+		#banner-talent ul.menu li {
+			border-color: #ffffff;
+		}
+
+		#banner-talent ul.updates li .timestamp {
+			color: #c0c4c5;
+		}
+
+		#banner-talent .icon.major {
+			border-color: #ffffff;
+			color: #ffffff;
+		}
+
+		#banner-talent:after {
+			-moz-transition: opacity 2.5s ease-in-out;
+			-webkit-transition: opacity 2.5s ease-in-out;
+			-ms-transition: opacity 2.5s ease-in-out;
+			transition: opacity 2.5s ease-in-out;
+			-moz-transition-delay: 1.25s;
+			-webkit-transition-delay: 1.25s;
+			-ms-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+			background: #626c6e;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#banner-talent h2 {
+			font-size: 2.75em;
+			line-height: 1.4em;
+		}
+
+		#banner-talent:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		#banner-talent .inner {
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			display: inline-block;
+			max-width: 95%;
+			opacity: 1;
+			position: relative;
+			vertical-align: middle;
+			z-index: 2;
+		}
+
+			#banner-talent .inner .actions {
+				margin-bottom: 0;
+			}
+
+			#banner-talent .inner .footnote {
+				margin-bottom: 0;
+				padding-top: 1.75em;
+				position: absolute;
+				width: 100%;
+			}
+
+		#banner-talent .more {
+			text-decoration: none;
+			background: #fff;
+			border-radius: 2em 2em 0 0;
+			border: 0;
+			bottom: 0;
+			color: #bbbebf;
+			height: 3.25em;
+			left: 50%;
+			margin-left: -2em;
+			overflow: hidden;
+			position: absolute;
+			text-indent: 4em;
+			white-space: nowrap;
+			width: 4em;
+			z-index: 2;
+		}
+
+			#banner-talent .more:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			#banner-talent .more:before {
+				content: '\f078';
+				display: block;
+				height: 3em;
+				left: 0;
+				line-height: 3.75em;
+				position: absolute;
+				text-align: center;
+				text-indent: 0;
+				top: 0;
+				width: 4em;
+			}
+
+			#banner-talent .more:hover {
+				color: #bbbebf !important;
+			}
+
+				#banner-talent .more:hover:before {
+					color: #bbbebf !important;
+				}
+
+	body.is-loading #banner-talent:after {
+		opacity: 1.0;
+	}
+
+	body.is-loading #banner-talent .inner {
+		opacity: 0;
+	}
+
+	body.is-touch #banner-talent {
+		background-attachment: scroll;
+		background-position: top left, top 75%;
+	}	
+
+	#banner-employer {
+		background-attachment: fixed,							fixed;
+		background-image: url("images/overlay.png"), url("../../images/Hirekind-employer-banner.jpg");
+		background-position: top left,						center center;
+		background-repeat: repeat,							no-repeat;
+		background-size: auto,							cover;
+		color: #d8dadb;
+		height: calc(100vh - 3.5em);
+		min-height: 35em;
+		position: relative;
+		text-align: center;
+	}
+
+		#banner-employer h2, #banner-employer h3, #banner-employer h4, #banner-employer h5, #banner-employer h6, #banner-employer strong, #banner-employer b {
+			color: #ffffff;
+		}
+
+		#banner-employer a {
+			color: #ffffff;
+		}
+
+		#banner-employer input[type="submit"],
+		#banner-employer input[type="reset"],
+		#banner-employer input[type="button"],
+		#banner-employer .button {
+			box-shadow: inset 0 0 0 1px #ffffff;
+			color: #ffffff !important;
+		}
+
+			#banner-employer input[type="submit"]:hover,
+			#banner-employer input[type="reset"]:hover,
+			#banner-employer input[type="button"]:hover,
+			#banner-employer .button:hover {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			#banner-employer input[type="submit"]:active,
+			#banner-employer input[type="reset"]:active,
+			#banner-employer input[type="button"]:active,
+			#banner-employer .button:active {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+		#banner-employer ul.labeled-icons li .icon {
+			border-color: #ffffff;
+		}
+
+		#banner-employer ul.menu li {
+			border-color: #ffffff;
+		}
+
+		#banner-employer ul.updates li .timestamp {
+			color: #c0c4c5;
+		}
+
+		#banner-employer .icon.major {
+			border-color: #ffffff;
+			color: #ffffff;
+		}
+
+		#banner-employer:after {
+			-moz-transition: opacity 2.5s ease-in-out;
+			-webkit-transition: opacity 2.5s ease-in-out;
+			-ms-transition: opacity 2.5s ease-in-out;
+			transition: opacity 2.5s ease-in-out;
+			-moz-transition-delay: 1.25s;
+			-webkit-transition-delay: 1.25s;
+			-ms-transition-delay: 1.25s;
+			transition-delay: 1.25s;
+			background: #626c6e;
+			content: '';
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		#banner-employer h2 {
+			font-size: 2.75em;
+			line-height: 1.4em;
+		}
+
+		#banner-employer:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		#banner-employer .inner {
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			display: inline-block;
+			max-width: 95%;
+			opacity: 1;
+			position: relative;
+			vertical-align: middle;
+			z-index: 2;
+		}
+
+			#banner-employer .inner .actions {
+				margin-bottom: 0;
+			}
+
+			#banner-employer .inner .footnote {
+				margin-bottom: 0;
+				padding-top: 1.75em;
+				position: absolute;
+				width: 100%;
+			}
+
+		#banner-employer .more {
+			text-decoration: none;
+			background: #fff;
+			border-radius: 2em 2em 0 0;
+			border: 0;
+			bottom: 0;
+			color: #bbbebf;
+			height: 3.25em;
+			left: 50%;
+			margin-left: -2em;
+			overflow: hidden;
+			position: absolute;
+			text-indent: 4em;
+			white-space: nowrap;
+			width: 4em;
+			z-index: 2;
+		}
+
+			#banner-employer .more:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			#banner-employer .more:before {
+				content: '\f078';
+				display: block;
+				height: 3em;
+				left: 0;
+				line-height: 3.75em;
+				position: absolute;
+				text-align: center;
+				text-indent: 0;
+				top: 0;
+				width: 4em;
+			}
+
+			#banner-employer .more:hover {
+				color: #bbbebf !important;
+			}
+
+				#banner-employer .more:hover:before {
+					color: #bbbebf !important;
+				}
+
+	body.is-loading #banner-employer:after {
+		opacity: 1.0;
+	}
+
+	body.is-loading #banner-employer .inner {
+		opacity: 0;
+	}
+
+	body.is-touch #banner-employer {
+		background-attachment: scroll;
+		background-position: top left, top 75%;
+	}	
+
+	#banner-events {
+		background-attachment: fixed,							fixed;
+		background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg");
+		background-position: top left,						center center;
+		background-repeat: repeat,							no-repeat;
+		background-size: auto,							cover;
+		color: #d8dadb;
+		height: calc(100vh - 3.5em);
+		min-height: 35em;
+		position: relative;
+		text-align: center;
+	}			
 /* Banner */
 
 	#banner {
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay.png"), url("../../images/hirekind_cover.png");
+		background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
