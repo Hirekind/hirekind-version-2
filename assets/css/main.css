@@ -2573,16 +2573,16 @@
 				}
 
 				#header h1 a:before {
-					color: #7ed5b1;					
+					color: #7ed5b1;
 					margin-right: 0.6em;
 				}
-				
-				/*background: url("../../images/Hirekind-logo-horizontal-color.png") no-repeat; 
+
+				/*background: url("../../images/Hirekind-logo-horizontal-color.png") no-repeat;
 				#header h1 a:before {
 					color: #7ed5b1;
 					content: '\f0c2';
 					margin-right: 0.6em;
-				}*/			
+				}*/
 
 		#header nav {
 			position: absolute;
@@ -2635,7 +2635,8 @@
 /* Separate Banner */
 	#banner-talent {
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg"); */
+		background-image: url("images/overlay.png"), url("../../images/hirekind-talent-banner.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -2808,7 +2809,7 @@
 	body.is-touch #banner-talent {
 		background-attachment: scroll;
 		background-position: top left, top 75%;
-	}	
+	}
 
 	#banner-employer {
 		background-attachment: fixed,							fixed;
@@ -2985,7 +2986,7 @@
 	body.is-touch #banner-employer {
 		background-attachment: scroll;
 		background-position: top left, top 75%;
-	}	
+	}
 
 	#banner-events {
 		background-attachment: fixed,							fixed;
@@ -2998,7 +2999,7 @@
 		min-height: 35em;
 		position: relative;
 		text-align: center;
-	}			
+	}
 /* Banner */
 
 	#banner {
