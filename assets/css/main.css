@@ -2636,7 +2636,7 @@
 	#banner-talent {
 		background-attachment: fixed,							fixed;
 		/* background-image: url("images/overlay.png"), url("../../images/Hirekind-main-banner.jpg"); */
-		background-image: url("images/overlay.png"), url("../../images/hirekind-talent-banner.jpg");
+		background-image: url("images/overlay.png"), url("../../images/Hirekind-talent-banner.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
